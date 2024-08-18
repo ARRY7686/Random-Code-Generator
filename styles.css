@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('media/9121424.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', Courier, monospace;
+    color: #333;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #ff6f61 0%, #d500f9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#adviceContainer {
+    color: black;
+    border-radius: 10px;    
+    padding: 40px;
+    max-width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.9);
+    line-height: 1.4; /* Improved readability */
+}
+
+#adviceText {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+#authorText {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #d88585;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px; /* Adjusted padding for better appearance */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff6f61 0%, #d500f9 100%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    text-transform: uppercase; /* Capitalize button text */
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #d500f9 0%, #ff6f61 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px); /* Slight lift effect */
+}
+button:active {
+    background: linear-gradient(135deg, #ff6f61 0%, #d500f9 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px); /* Slightly pressed effect */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    #adviceContainer {
+        font-size: 1.8em;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 992px) {
+    #adviceContainer {
+        font-size: 1.6em;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    #adviceContainer {
+        padding: 20px;
+        font-size: 1.4em;
+    }
+    
+    button {
+        padding: 8px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    #adviceContainer {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 768px) {
+    button {
+        padding: 12px 25px;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+}
+
+.cursor {
+    width: 2px;
+    height: 2px;
+    background-color: blue;
+    display: inline-block;
+}
+
+#cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: #000000;
+    margin-left: 5px;
+    height: 1.25ch;
+    animation: blink .25s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#authorText {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #d88585;
+    font-style: italic; /* Italic style for author name */
+}
+#adviceContainerText {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* Responsive Heading Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2em;
+    }
+}@media (max-width: 768px) {
+    #adviceContainer {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+    
+    #adviceContainerText {
+        font-size: 1.2em;
+    }
+    
+    #authorText {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    #adviceContainer {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+    
+    #adviceContainerText {
+        font-size: 1em;
+    }
+    
+    #authorText {
+        font-size: 0.9em;
+    }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
